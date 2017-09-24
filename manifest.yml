@@ -1,2 +1,4 @@
 name: band-aid
 memory: 256M
+services:
+  - band-aid-cloudant-db
