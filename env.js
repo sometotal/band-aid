@@ -19,7 +19,7 @@ else {
 let DATASOURCES = {
   "db": {
     "url": VCAP.cloudantNoSQLDB[0].credentials.url,
-    "database": "band-app",
+    "database": "band-aid",
     "name": "db",
     "connector": "cloudant"
   }
