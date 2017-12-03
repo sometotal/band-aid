@@ -1,0 +1,68 @@
+{
+  "name": "show",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "time-start": {
+      "type": "date"
+    },
+    "time-end": {
+      "type": "date"
+    },
+    "age-restriction": {
+      "type": "string"
+    },
+    "alcohol-status": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "string"
+    },
+    "poster-url": {
+      "type": "string"
+    },
+    "web-url": {
+      "type": "string"
+    },
+    "facebook-url": {
+      "type": "string"
+    },
+    "venue-name": {
+      "type": "string"
+    },
+    "venue-address-1": {
+      "type": "string"
+    },
+    "venue-address-2": {
+      "type": "string"
+    },
+    "venue-city": {
+      "type": "string"
+    },
+    "venue-state": {
+      "type": "string"
+    },
+    "venue-zipcode": {
+      "type": "string"
+    },
+    "venue-url": {
+      "type": "string"
+    },
+    "geopoint": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
