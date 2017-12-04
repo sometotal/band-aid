@@ -1,64 +1,66 @@
 {
-  "name": "show",
+  "name": "event",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "timeStart": {
+      "type": "date"
+    },
+    "timeEnd": {
+      "type": "date"
+    },
     "title": {
       "type": "string"
     },
     "description": {
       "type": "string"
     },
-    "time-start": {
-      "type": "date"
-    },
-    "time-end": {
-      "type": "date"
-    },
-    "age-restriction": {
+    "ageRestriction": {
       "type": "string"
     },
-    "alcohol-status": {
+    "alcoholStatus": {
       "type": "string"
     },
     "cost": {
       "type": "string"
     },
-    "poster-url": {
+    "posterUrl": {
       "type": "string"
     },
-    "web-url": {
+    "webUrl": {
       "type": "string"
     },
-    "facebook-url": {
+    "facebookUrl": {
       "type": "string"
     },
-    "venue-name": {
+    "locName": {
       "type": "string"
     },
-    "venue-address-1": {
+    "locAddress1": {
       "type": "string"
     },
-    "venue-address-2": {
+    "locAddress2": {
       "type": "string"
     },
-    "venue-city": {
+    "locCity": {
       "type": "string"
     },
-    "venue-state": {
+    "locState": {
       "type": "string"
     },
-    "venue-zipcode": {
+    "locZipcode": {
       "type": "string"
     },
-    "venue-url": {
+    "locUrl": {
       "type": "string"
     },
-    "geopoint": {
-      "type": "geopoint"
+    "bands": {
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],
