@@ -61,6 +61,12 @@
       "type": [
         "string"
       ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
     }
   },
   "validations": [],
