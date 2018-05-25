@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: band-aid
+  labels:
+    app: band-aid
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+       app: band-aid
+  template:
+    metadata:
+      labels:
+        app: band-aid
+    spec:
+      containers:
+      - name: band-aid
+        image: nibalizer/band-aid:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        volumeMounts:
+        - name: configjson
+          mountPath: "/usr/src/app/secrets"
+          readOnly: true
+      volumes:
+      - name: configjson
+        secret:
+          secretName: band-aid-secret
