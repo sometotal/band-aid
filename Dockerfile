@@ -16,7 +16,5 @@ RUN npm install --only=production
 # Bundle app source
 COPY . .
 
-RUN touch env.json
-
 EXPOSE 3000
 CMD [ "npm", "start" ]
