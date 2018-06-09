@@ -9,7 +9,7 @@ if (process.env.VCAP_SERVICES) {
 // Check for local credentials; log error if it fails
 else {
   try {
-    VCAP = require('./env.json');
+    VCAP = require('./secrets/env.json');
   } catch (e) {
     console.error(e);
   }

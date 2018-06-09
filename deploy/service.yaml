@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: band-aid
+spec:
+  selector:
+    app: band-aid
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
